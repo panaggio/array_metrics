@@ -1,4 +1,4 @@
-# coding: UTF-8
+# encoding: UTF-8
 
 Gem::Specification.new do |s|
   s.name          = "array_metrics"
@@ -12,6 +12,6 @@ Gem::Specification.new do |s|
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files spec`.split("\n")
   s.has_rdoc      = true
-  s.require_path  = 'lib'
-  s.add_runtime_dependency "rspec", "~> 2.0"
+  s.require_paths = ["lib"]
+  s.add_development_dependency "rspec", "~> 2.0"
 end
